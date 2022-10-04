@@ -5,21 +5,25 @@ using UnityEngine;
 public class Generator : MonoBehaviour
 {
     public int loops = 10;
-    public float angle;
-    public float a = 16f;
-    public float n = 10;
+    public float r, c;
+    public int n = 0;
     public GameObject prefab;
     // Start is called before the first frame update
     void Start()
     {
-        for(int i=0;i<loops;i++)
+        while(r > 0)
         {
-            for(int j=0;j<n;++j)
+            loops--;
+            r = loops/2;
+            c = 2*Mathf.PI*r;
+            n = (int)(c/(2*0.5));
+            float sin = 2*r*Mathf.Sin(Mathf.PI/n);
+            for(int i=0;i<n;++i)
             {
-                angle = Mathf.PI * 2f * j / n;
-                GameObject.Instantiate(prefab, new Vector3(a*Mathf.Cos(angle), a*Mathf.Sin(angle), 0f), Quaternion.identity);
+                float angle = Mathf.PI * 2f * (i / n);
+                GameObject.Instantiate(prefab, new Vector3(r*Mathf.Cos(angle), r*Mathf.Sin(angle), 0f), Quaternion.identity);
             }
-            a -= 2.0f;
+            r--;
         }
     }
 
