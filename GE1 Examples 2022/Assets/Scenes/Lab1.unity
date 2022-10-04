@@ -422,8 +422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc29f11ed7fd0414fb6918456fb9fe6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loops: 10
+  loops: 5
   angle: 0
   a: 16
-  n: 16
+  n: 0
   prefab: {fileID: 494530980}
