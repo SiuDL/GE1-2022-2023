@@ -19,7 +19,7 @@ public class Generator : MonoBehaviour
                 angle = Mathf.PI * 2f * j / n;
                 GameObject.Instantiate(prefab, new Vector3(a*Mathf.Cos(angle), a*Mathf.Sin(angle), 0f), Quaternion.identity);
             }
-            a -= 2*(2f);
+            a -= 2.0f;
         }
     }
 
