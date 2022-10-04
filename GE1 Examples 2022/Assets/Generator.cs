@@ -7,7 +7,7 @@ public class Generator : MonoBehaviour
     public int loops = 10;
     public float angle;
     public float a = 16f;
-    public float n = 20;
+    public float n = 10;
     public GameObject prefab;
     // Start is called before the first frame update
     void Start()
