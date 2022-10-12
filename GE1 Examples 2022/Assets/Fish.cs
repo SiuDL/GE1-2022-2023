@@ -7,9 +7,8 @@ public class Fish : MonoBehaviour
     public Transform head;
     public Transform tail;
     public float freq = 0.5f;
-    public float headAmp = 40;
-    public float tailAmp = 60;
-
+    public float headAmp = 20;
+    public float tailAmp = 40;
     public float theta = 0;
     // Start is called before the first frame update
     void Start()
