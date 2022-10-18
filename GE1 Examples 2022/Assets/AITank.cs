@@ -20,7 +20,7 @@ public class AITank : MonoBehaviour {
             // Put code here to draw the gizmos
             // Use sin and cos to calculate the positions of the waypoints 
             // You can draw gizmos using
-            float thetaPoint = (Mathf.PI * 2.0f) / numWaypoints;
+            float thetaPoint = CalculateThetaPoint(numWaypoints);
             for(int i = 0; i < numWaypoints; i++)
             {
                 float theta = thetaPoint * i;
@@ -52,5 +52,10 @@ public class AITank : MonoBehaviour {
         // Put code here to calculate if the player is inside the field of view and in range
         // You can print stuff to the screen using:
         GameManager.Log("Hello from th AI tank");
+    }
+
+    float CalculateThetaPoint(int n)
+    {
+        return (Mathf.PI * 2.0f) / n;
     }
 }
