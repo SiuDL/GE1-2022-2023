@@ -37,6 +37,14 @@ public class AITank : MonoBehaviour {
         // Task 2
         // Put code here to calculate the waypoints in a loop and 
         // Add them to the waypoints List
+        float thetaPoint = CalculateThetaPoint(numWaypoints);
+        for(int i = 0; i < numWaypoints; i++)
+        {
+            float theta = thetaPoint * i;
+            Vector3 p = new Vector3(Mathf.Sin(theta) * radius, 0, Mathf.Cos(theta) * radius);
+            p = transform.TransformPoint(p);
+            waypoints.Add(p);
+        }
     }
 
     // Update is called once per frame
