@@ -26,9 +26,9 @@ public class AITank : MonoBehaviour {
                 float theta = thetaPoint * i;
                 Vector3 p = new Vector3(Mathf.Sin(theta) * radius, 0, Mathf.Cos(theta) * radius);
                 p = transform.TransformPoint(p);
+                Gizmos.color = Color.red;
+                Gizmos.DrawWireSphere(p, 1);
             }
-            // Gizmos.color = Color.green;
-            // Gizmos.DrawWireSphere(pos, 1);
         }
     }
 
