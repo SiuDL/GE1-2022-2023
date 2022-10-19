@@ -60,8 +60,9 @@ public class AITank : MonoBehaviour {
         Vector3 point = waypoints[current] - transform.position;
         if(point.magnitude < 1)
         {
-            current += 1 % waypoints.Count;
+            current = (current + 1) % waypoints.Count;
         }
+        point.Normalize();
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(point), Time.deltaTime *  10);
         transform.Translate(point * speed * Time.deltaTime, Space.World);
 
