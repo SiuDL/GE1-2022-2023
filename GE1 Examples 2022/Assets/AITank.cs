@@ -9,8 +9,13 @@ public class AITank : MonoBehaviour {
     public int numWaypoints = 5;
     public int current = 0;
     List<Vector3> waypoints = new List<Vector3>();
-    public float speed = 10;
+    public float speed = 3;
     public Transform player;    
+
+    public float CalculateThetaPoint(int n)
+    {
+        return (Mathf.PI * 2.0f) / n;
+    }
 
     public void OnDrawGizmos()
     {
@@ -52,7 +57,13 @@ public class AITank : MonoBehaviour {
         // Task 3
         // Put code here to move the tank towards the next waypoint
         // When the tank reaches a waypoint you should advance to the next one
-
+        Vector3 point = waypoints[current] - transform.position;
+        if(point.magnitude < 1)
+        {
+            current += 1 % waypoints.Count;
+        }
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(point), Time.deltaTime *  10);
+        transform.Translate(point * speed * Time.deltaTime, Space.World);
 
         // Task 4
         // Put code here to check if the player is in front of or behine the tank
@@ -60,10 +71,5 @@ public class AITank : MonoBehaviour {
         // Put code here to calculate if the player is inside the field of view and in range
         // You can print stuff to the screen using:
         GameManager.Log("Hello from th AI tank");
-    }
-
-    float CalculateThetaPoint(int n)
-    {
-        return (Mathf.PI * 2.0f) / n;
     }
 }
