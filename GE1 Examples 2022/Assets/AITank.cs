@@ -57,20 +57,29 @@ public class AITank : MonoBehaviour {
         // Task 3
         // Put code here to move the tank towards the next waypoint
         // When the tank reaches a waypoint you should advance to the next one
-        Vector3 point = waypoints[current] - transform.position;
-        if(point.magnitude < 1)
+        Vector3 waypoint = waypoints[current] - transform.position;
+        if(waypoint.magnitude < 1)
         {
             current = (current + 1) % waypoints.Count;
         }
-        point.Normalize();
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(point), Time.deltaTime *  10);
-        transform.Translate(point * speed * Time.deltaTime, Space.World);
+        waypoint.Normalize();
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(waypoint), Time.deltaTime *  10);
+        transform.Translate(waypoint * speed * Time.deltaTime, Space.World);
 
         // Task 4
         // Put code here to check if the player is in front of or behine the tank
+        Vector3 playerPos = player.position - transform.position;
+        if(Vector3.Dot(transform.forward, playerPos.normalized) > 0)
+        {
+            Debug.Log("Front");
+        }
+        else
+        {
+            Debug.Log("Back");
+        }
         // Task 5
         // Put code here to calculate if the player is inside the field of view and in range
         // You can print stuff to the screen using:
-        GameManager.Log("Hello from th AI tank");
+        // GameManager.Log("Hello from th AI tank");
     }
 }
