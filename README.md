@@ -1,16 +1,28 @@
 # Project Title
 
-Name: 
+Name: Siu Dzoen Lee
 
-Student Number: 
+Student Number: C19401596
 
-Class Group:
+Class Group: TU856
 
 Video:
 
 [![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
 
 # Description of the project
+
+This is project is to create an interactable robotic skeletal body floating on a display, the idea of a robot is inspired by Terminator.
+The action performed in order to interact with this robot is through a set of buttons in front of this display. Once a button is pushed,
+an interaction will be showcased.
+
+## Proposal for project:
+
+The initial proposal for this project is still similar however a few changes have been made. The intial plan was still to create an interactable robotic but
+instead was to have it so that the robot is lying flat on its back and the interactions you have is through be able to pick apart the robot. Think of this like a
+human anatomical body where you can pull apart its organs and inspect them.
+
+With all this said, I have scaled down the project and decided to go with an alternative route as described in the description due to time contraints with FYP.
 
 # Instructions for use
 
@@ -32,8 +44,6 @@ Video:
 # What I am most proud of in the assignment
 
 # What I learned
-
-# Proposal submitted earlier can go here:
 
 ## This is how to markdown text:
 
@@ -67,7 +77,3 @@ public void render()
 This is an image using a relative URL:
 
 ![An image](images/p8.png)
-
-This is a youtube video:
-
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
