@@ -19,7 +19,7 @@ an interaction will be showcased.
 ## Proposal for project:
 
 The initial proposal for this project is still similar however a few changes have been made. The intial plan was still to create an interactable robotic but
-instead was to have it so that the robot is lying flat on its back and the interactions you have is through be able to pick apart the robot. Think of this like a
+instead to have it so that the robot is lying flat on its back and the interactions you have is by being able to pick apart the robot. Think of this like a
 human anatomical body where you can pull apart its organs and inspect them.
 
 With all this said, I have scaled down the project and decided to go with an alternative route as described in the description due to time contraints with FYP.
