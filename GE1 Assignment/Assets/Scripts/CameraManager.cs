@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    InputManager inputManager;
+    private InputManager inputManager;
+    private Transform cameraPosition;
 
     [Header("Horizontal Mouse Sensitivity")]
     public float sensX = 40f;
@@ -25,7 +26,14 @@ public class CameraManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        inputManager = GameObject.FindGameObjectWithTag("Player").GetComponent<InputManager>();
+        inputManager = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<InputManager>();
+        cameraPosition = GameObject.FindGameObjectWithTag("CameraPosition").transform;
+    }
+
+    // attach camera to player
+    private void AttachCamera()
+    {
+        transform.position = cameraPosition.position;
     }
     
     private void CameraMovement()
@@ -49,6 +57,7 @@ public class CameraManager : MonoBehaviour
 
     public void ExecuteCameraOperations()
     {
+        AttachCamera();
         CameraMovement();
     }
 }
