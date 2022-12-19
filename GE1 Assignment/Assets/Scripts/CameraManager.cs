@@ -8,10 +8,10 @@ public class CameraManager : MonoBehaviour
     private Transform cameraPosition;
     private Transform playerPosition;
 
-    [SerializeField][Header("Horizontal Mouse Sensitivity")]
-    private float sensX = 40f;
-    [SerializeField][Header("Vertical Mouse Sensitivity")]
-    private float sensY = 40f;
+    [Header("Horizontal Mouse Sensitivity")]
+    [SerializeField] private float sensX = 40f;
+    [Header("Vertical Mouse Sensitivity")]
+    [SerializeField] private float sensY = 40f;
 
     private float mouseX; 
     private float mouseY;
@@ -30,6 +30,8 @@ public class CameraManager : MonoBehaviour
         inputManager = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<InputManager>();
         cameraPosition = GameObject.FindGameObjectWithTag("CameraPosition").transform;
         playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
+
+        transform.forward = cameraPosition.forward;
     }
 
     // attach camera to player
@@ -53,7 +55,7 @@ public class CameraManager : MonoBehaviour
         // keeps it so that the player can look any further up and down
         rotationX = Mathf.Clamp(rotationX, minRotation, maxRotation);
 
-        // rotate camera
+        // rotate camera and player orientation
         transform.rotation = Quaternion.Euler(rotationX, rotationY, 0);
         playerPosition.rotation = Quaternion.Euler(0, rotationY, 0);
     }

@@ -8,15 +8,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 moveDirection;
     private Rigidbody rigidBody;
 
-    [SerializeField][Header("Movement Variables")]
-    private float moveSpeed = 7f;
-    private float drag;
+    [Header("Movement Variables")]
+    [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float drag = 5f;
 
     [Header("Grounded Variables")]
     private float height = 2;
     public LayerMask ground;
-    [SerializeField]
-    private bool grounded;
+    [SerializeField] private bool grounded;
 
     private float acceleration = 10f;
 

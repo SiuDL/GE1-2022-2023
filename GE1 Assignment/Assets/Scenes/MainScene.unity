@@ -386,6 +386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensX: 40
+  sensY: 40
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,9 +524,9 @@ GameObject:
   - component: {fileID: 1166478042}
   - component: {fileID: 1166478041}
   - component: {fileID: 1166478040}
-  - component: {fileID: 1166478044}
   - component: {fileID: 1166478045}
   - component: {fileID: 1166478046}
+  - component: {fileID: 1166478047}
   m_Layer: 0
   m_Name: PlayerObject
   m_TagString: Untagged
@@ -614,18 +615,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166478038}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1166478044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166478038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ed4ff13cf44d464599e8203a7599793, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1166478045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -639,6 +628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  drag: 5
   ground:
     serializedVersion: 2
     m_Bits: 8
@@ -655,6 +645,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 529a8b22b4db8454bbc79fdd44021057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1166478047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166478038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fdd16a2ac34aa448afee49016887ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 3
 --- !u!1 &1299062870
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,6 +668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1299062871}
   - component: {fileID: 1299062872}
+  - component: {fileID: 1299062874}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -704,6 +708,18 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!114 &1299062874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299062870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed4ff13cf44d464599e8203a7599793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1572854930
 GameObject:
   m_ObjectHideFlags: 0

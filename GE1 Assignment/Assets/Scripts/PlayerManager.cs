@@ -7,11 +7,13 @@ public class PlayerManager : MonoBehaviour
     private InputManager inputManager;
     private PlayerMovement playerMovement;
     private CameraManager cameraManager;
+    private InteractionManager playerInteract;
 
     private void Awake()
     {
-        inputManager = GetComponent<InputManager>();
-        playerMovement = GetComponent<PlayerMovement>();
+        inputManager = GetComponentInChildren<InputManager>();
+        playerMovement = GetComponentInChildren<PlayerMovement>();
+        playerInteract = GetComponentInChildren<InteractionManager>();
         cameraManager = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraManager>();
     }
 
@@ -19,6 +21,7 @@ public class PlayerManager : MonoBehaviour
     {
         inputManager.ExecuteInputManager();
         cameraManager.ExecuteCameraOperations();
+        playerInteract.ExecutePlayerInteract();
     }
 
     private void FixedUpdate()
