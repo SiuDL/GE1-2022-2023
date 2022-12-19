@@ -30,8 +30,6 @@ public class CameraManager : MonoBehaviour
         inputManager = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<InputManager>();
         cameraPosition = GameObject.FindGameObjectWithTag("CameraPosition").transform;
         playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
-
-        //transform.forward = cameraPosition.forward;
     }
 
     // attach camera to player

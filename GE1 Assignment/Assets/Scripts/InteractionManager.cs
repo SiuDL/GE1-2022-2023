@@ -10,7 +10,7 @@ public class InteractionManager : MonoBehaviour
     private LayerMask mask;
 
     [SerializeField]
-    private float distance = 3f;
+    private float distance = 2f;
     
     private void Awake()
     {
@@ -28,7 +28,10 @@ public class InteractionManager : MonoBehaviour
 
         if(Physics.Raycast(ray, out hit, distance, mask))
         {
-            
+            if(hit.collider.GetComponentInChildren<Interactable>() != null)
+            {
+                Debug.Log("Button spotted");
+            }
         }
     }
 

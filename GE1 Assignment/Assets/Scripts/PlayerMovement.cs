@@ -24,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
         inputManager = GetComponent<InputManager>();
         // get the object's rigid body that this script is attached to
         rigidBody = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Rigidbody>();
-        //rigidBody.freezeRotation = true;
     }
 
     private void CheckGrounded()
