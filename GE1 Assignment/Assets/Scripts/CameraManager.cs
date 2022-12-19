@@ -31,7 +31,7 @@ public class CameraManager : MonoBehaviour
         cameraPosition = GameObject.FindGameObjectWithTag("CameraPosition").transform;
         playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
 
-        transform.forward = cameraPosition.forward;
+        //transform.forward = cameraPosition.forward;
     }
 
     // attach camera to player
