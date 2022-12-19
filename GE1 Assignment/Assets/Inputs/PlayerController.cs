@@ -50,7 +50,7 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""WASD"",
                     ""id"": ""37a44719-9aa5-493c-9cd9-afbb0aab67b6"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""2DVector(mode=2)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
