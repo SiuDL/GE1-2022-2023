@@ -30,7 +30,7 @@ public class InteractionManager : MonoBehaviour
         {
             if(hit.collider.GetComponentInChildren<Interactable>() != null)
             {
-                Debug.Log("Button spotted");
+                Debug.Log(hit.collider.GetComponentInChildren<Interactable>().prompt);
             }
         }
     }

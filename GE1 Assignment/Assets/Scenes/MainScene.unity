@@ -1091,9 +1091,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 244735992}
-  - component: {fileID: 244735993}
   m_Layer: 6
-  m_Name: Buttons
+  m_Name: Interactive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1117,19 +1116,6 @@ Transform:
   m_Father: {fileID: 320483270}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &244735993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244735991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8409aa3302bdc44c973f7d7b7f06bf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Press Button
 --- !u!1 &320483264
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,7 +4207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8409aa3302bdc44c973f7d7b7f06bf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prompt: 
+  prompt: Use Button
 --- !u!43 &466789873
 Mesh:
   m_ObjectHideFlags: 0
