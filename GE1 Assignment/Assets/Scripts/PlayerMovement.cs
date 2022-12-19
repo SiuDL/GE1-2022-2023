@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    InputManager inputManager;
-    Vector3 moveDirection;
-    Rigidbody rigidBody;
+    private InputManager inputManager;
+    private Vector3 moveDirection;
+    private Rigidbody rigidBody;
 
-    [Header("Movement Speed")]
-    public float moveSpeed = 5f;
+    [SerializeField][Header("Movement Variables")]
+    private float moveSpeed = 7f;
+    private float drag;
+
+    [Header("Grounded Variables")]
+    private float height = 2;
+    public LayerMask ground;
+    [SerializeField]
+    private bool grounded;
 
     private float acceleration = 10f;
 
@@ -19,6 +26,20 @@ public class PlayerMovement : MonoBehaviour
         // get the object's rigid body that this script is attached to
         rigidBody = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Rigidbody>();
         rigidBody.freezeRotation = true;
+    }
+
+    private void CheckGrounded()
+    {
+        grounded = Physics.Raycast(transform.position, Vector3.down, height * 0.5f + 0.1f, ground);
+
+        if(grounded)
+        {
+            rigidBody.drag = drag;
+        }
+        else
+        {
+            rigidBody.drag = 0;
+        }
     }
 
     private void PlayerLocomotion()
@@ -31,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void ExecutePlayerMovement()
     {
+        CheckGrounded();
         PlayerLocomotion();
     }
 }

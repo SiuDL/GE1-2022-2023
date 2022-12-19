@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    PlayerController controls;
+    private PlayerController controls;
 
     // variables to take in player/camera input from input system
     private Vector2 cameraInput;

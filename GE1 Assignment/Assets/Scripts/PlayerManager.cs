@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    InputManager inputManager;
-    PlayerMovement playerMovement;
-    CameraManager cameraManager;
+    private InputManager inputManager;
+    private PlayerMovement playerMovement;
+    private CameraManager cameraManager;
 
     private void Awake()
     {
