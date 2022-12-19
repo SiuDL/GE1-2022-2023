@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     InputManager inputManager;
-    Transform cameraTransform;
     Vector3 moveDirection;
     Rigidbody rigidBody;
 
@@ -17,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         inputManager = GetComponent<InputManager>();
-        //cameraTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
         // get the object's rigid body that this script is attached to
         rigidBody = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Rigidbody>();
         rigidBody.freezeRotation = true;
