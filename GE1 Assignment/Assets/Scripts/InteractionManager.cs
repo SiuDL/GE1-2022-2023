@@ -11,15 +11,18 @@ public class InteractionManager : MonoBehaviour
 
     [SerializeField]
     private float distance = 2f;
+    private PlayerUI playerUI;
     
     private void Awake()
     {
         cameraTrnsform = GameObject.FindGameObjectWithTag("MainCamera").transform;
+        playerUI = GetComponent<PlayerUI>();
     }
 
     // checks if the object can be interacted with
     private void CheckInteractable()
     {
+        playerUI.UpdateText(string.Empty);
         // creating a ray that shoots out from the player towards where the camera is looking
         Ray ray = new Ray(cameraTrnsform.position, cameraTrnsform.forward);
         Debug.DrawRay(ray.origin, ray.direction * distance); // draws the ray (a straight line) from the players position
@@ -30,7 +33,7 @@ public class InteractionManager : MonoBehaviour
         {
             if(hit.collider.GetComponentInChildren<Interactable>() != null)
             {
-                Debug.Log(hit.collider.GetComponentInChildren<Interactable>().prompt);
+                playerUI.UpdateText(hit.collider.GetComponentInChildren<Interactable>().prompt);
             }
         }
     }

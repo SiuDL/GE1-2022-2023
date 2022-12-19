@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Buttons : Interactable
+public class Button : Interactable
 {
     void Start()
     {
@@ -16,6 +16,6 @@ public class Buttons : Interactable
 
     protected override void Interact()
     {
-        Debug.Log("Interacted with " + gameObject);
+        Debug.Log("Interacted with " + gameObject.name);
     }
 }
