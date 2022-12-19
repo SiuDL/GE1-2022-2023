@@ -17,16 +17,16 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         inputManager = GetComponent<InputManager>();
-        cameraTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
+        //cameraTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
         // get the object's rigid body that this script is attached to
-        rigidBody = GetComponent<Rigidbody>();
+        rigidBody = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Rigidbody>();
         rigidBody.freezeRotation = true;
     }
 
     private void PlayerLocomotion()
     {
-        moveDirection = cameraTransform.forward * inputManager.GetMoveInputY();
-        moveDirection = moveDirection + cameraTransform.right * inputManager.GetMoveInputX();
+        moveDirection = transform.forward * inputManager.GetMoveInputY();
+        moveDirection = moveDirection + transform.right * inputManager.GetMoveInputX();
 
         rigidBody.AddForce(moveDirection.normalized * moveSpeed * acceleration, ForceMode.Force);
     }

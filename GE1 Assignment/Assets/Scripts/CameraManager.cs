@@ -6,6 +6,7 @@ public class CameraManager : MonoBehaviour
 {
     private InputManager inputManager;
     private Transform cameraPosition;
+    private Transform playerPosition;
 
     [Header("Horizontal Mouse Sensitivity")]
     public float sensX = 40f;
@@ -28,6 +29,7 @@ public class CameraManager : MonoBehaviour
 
         inputManager = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<InputManager>();
         cameraPosition = GameObject.FindGameObjectWithTag("CameraPosition").transform;
+        playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // attach camera to player
@@ -53,6 +55,7 @@ public class CameraManager : MonoBehaviour
 
         // rotate camera
         transform.rotation = Quaternion.Euler(rotationX, rotationY, 0);
+        playerPosition.rotation = Quaternion.Euler(0, rotationY, 0);
     }
 
     public void ExecuteCameraOperations()
