@@ -7,6 +7,7 @@ public class InputManager : MonoBehaviour
     // variables to take in player/camera input from input system
     private Vector2 cameraInput;
     private Vector2 movementInput;
+    private bool buttonInput;
 
     private float camInputY;
     private float camInputX;
@@ -21,6 +22,7 @@ public class InputManager : MonoBehaviour
 
             controls.PlayerMovement.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
             controls.PlayerMovement.Movement.performed += i => movementInput = i.ReadValue<Vector2>();
+            controls.PlayerAction.Interact.performed += i => buttonInput = true;
         }
 
         controls.Enable();
@@ -47,6 +49,15 @@ public class InputManager : MonoBehaviour
     {
         verticalInput = movementInput.y;
         horizontalInput = movementInput.x;
+    }
+
+    public bool ButtonPressed()
+    {
+        if(buttonInput)
+        {
+            return true;
+        }
+        return false;
     }
 
     public float GetCamInputY()

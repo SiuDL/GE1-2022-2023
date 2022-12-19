@@ -12,11 +12,13 @@ public class InteractionManager : MonoBehaviour
     [SerializeField]
     private float distance = 2f;
     private PlayerUI playerUI;
+    private InputManager inputManager;
     
     private void Awake()
     {
         cameraTrnsform = GameObject.FindGameObjectWithTag("MainCamera").transform;
         playerUI = GetComponent<PlayerUI>();
+        inputManager = GetComponent<InputManager>();
     }
 
     // checks if the object can be interacted with
@@ -33,7 +35,12 @@ public class InteractionManager : MonoBehaviour
         {
             if(hit.collider.GetComponentInChildren<Interactable>() != null)
             {
-                playerUI.UpdateText(hit.collider.GetComponentInChildren<Interactable>().prompt);
+                Interactable interactable = hit.collider.GetComponentInChildren<Interactable>();
+                playerUI.UpdateText(interactable.prompt);
+                if(inputManager.ButtonPressed())
+                {
+                    interactable.BaseInteract();
+                }
             }
         }
     }
