@@ -23,6 +23,7 @@ public class InputManager : MonoBehaviour
             controls.PlayerMovement.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
             controls.PlayerMovement.Movement.performed += i => movementInput = i.ReadValue<Vector2>();
             controls.PlayerAction.Interact.performed += i => buttonInput = true;
+            controls.PlayerAction.Interact.canceled += i => buttonInput = false;
         }
 
         controls.Enable();
