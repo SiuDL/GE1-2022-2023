@@ -51,10 +51,6 @@ For looking around in the scene, simply move the mouse to rotate the camera
 | MyClass1.cs | Modified from [reference]() |
 | MyClass2.cs | From [reference]() |
 
-# References
-* Item 1
-* Item 2
-
 # What I am most proud of in the assignment
 
 # What I learned
