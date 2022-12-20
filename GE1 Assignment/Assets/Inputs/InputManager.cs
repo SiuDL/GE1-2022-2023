@@ -55,6 +55,7 @@ public class InputManager : MonoBehaviour
     {
         if(buttonInput)
         {
+            buttonInput = false;
             return true;
         }
         return false;
