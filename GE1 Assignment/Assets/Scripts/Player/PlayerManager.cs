@@ -24,6 +24,9 @@ public class PlayerManager : MonoBehaviour
         playerInteract.ExecutePlayerInteract();
     }
 
+    // execution of player movement is performed in FixedUpdate
+    // if placed in Update, movement increases exponentially due to
+    // it being updated based on your machines framerate
     private void FixedUpdate()
     {
         playerMovement.ExecutePlayerMovement();

@@ -1843,7 +1843,7 @@ GameObject:
   - component: {fileID: 326891567}
   m_Layer: 6
   m_Name: Button
-  m_TagString: Button1
+  m_TagString: Button 1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4339,7 +4339,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh72506
+  m_Name: pb_Mesh24526
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4681,7 +4681,7 @@ GameObject:
   - component: {fileID: 518432412}
   m_Layer: 6
   m_Name: Button
-  m_TagString: Button3
+  m_TagString: Button 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7296,7 +7296,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh72358
+  m_Name: pb_Mesh24368
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -19148,7 +19148,7 @@ GameObject:
   - component: {fileID: 1577337118}
   m_Layer: 6
   m_Name: Button
-  m_TagString: Button2
+  m_TagString: Button 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22406,7 +22406,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh72338
+  m_Name: pb_Mesh24348
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
