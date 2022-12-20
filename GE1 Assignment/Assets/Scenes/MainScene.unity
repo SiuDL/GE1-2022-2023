@@ -4328,7 +4328,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 326891560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8409aa3302bdc44c973f7d7b7f06bf8, type: 3}
+  m_Script: {fileID: 11500000, guid: fb67029a7b5471245ac5a1842466d2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prompt: Use Button
@@ -4677,8 +4677,8 @@ GameObject:
   - component: {fileID: 518432406}
   - component: {fileID: 518432405}
   - component: {fileID: 518432404}
-  - component: {fileID: 518432410}
   - component: {fileID: 518432411}
+  - component: {fileID: 518432412}
   m_Layer: 6
   m_Name: Button
   m_TagString: Button3
@@ -7150,27 +7150,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518432403}
   m_LocalRotation: {x: -0.3420201, y: -0, z: -0, w: 0.9396927}
-  m_LocalPosition: {x: 1.3017635, y: 0.62953794, z: -0.4570794}
+  m_LocalPosition: {x: 1.3017635, y: 0.607, z: -0.434}
   m_LocalScale: {x: 1.1759, y: 0.88935786, z: 1.0731033}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 895704489}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -40, y: 0, z: 0}
---- !u!114 &518432410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518432403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8409aa3302bdc44c973f7d7b7f06bf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Use Button
-  button: {fileID: 518432403}
 --- !u!95 &518432411
 Animator:
   serializedVersion: 4
@@ -7191,6 +7177,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &518432412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518432403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb67029a7b5471245ac5a1842466d2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: Use Button
+  button: {fileID: 518432403}
 --- !u!1 &579386745
 GameObject:
   m_ObjectHideFlags: 0
@@ -19144,8 +19144,8 @@ GameObject:
   - component: {fileID: 1577337112}
   - component: {fileID: 1577337111}
   - component: {fileID: 1577337110}
-  - component: {fileID: 1577337116}
   - component: {fileID: 1577337117}
+  - component: {fileID: 1577337118}
   m_Layer: 6
   m_Name: Button
   m_TagString: Button2
@@ -21624,20 +21624,6 @@ Transform:
   m_Father: {fileID: 1268108828}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -40, y: 0, z: 0}
---- !u!114 &1577337116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577337109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8409aa3302bdc44c973f7d7b7f06bf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prompt: Use Button
-  button: {fileID: 1577337109}
 --- !u!95 &1577337117
 Animator:
   serializedVersion: 4
@@ -21658,6 +21644,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1577337118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577337109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb67029a7b5471245ac5a1842466d2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prompt: Use Button
+  button: {fileID: 1577337109}
 --- !u!43 &1583243686
 Mesh:
   m_ObjectHideFlags: 0
