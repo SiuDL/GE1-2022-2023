@@ -7,5 +7,6 @@ public class Button3 : Interactable
     protected override void Interact()
     {
         Debug.Log("Interacted with " + gameObject.name);
+        
     }
 }
