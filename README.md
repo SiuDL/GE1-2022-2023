@@ -12,20 +12,34 @@ Video:
 
 # Description of the project
 
-This is project is to create an interactable robotic skeletal body floating on a display, the idea of a robot is inspired by Terminator.
+This is project is to create an interactable robotic body floating on a display, the idea of a robot is inspired by Terminator.
 The action performed in order to interact with this robot is through a set of buttons in front of this display. Once a button is pushed,
-an interaction will be showcased.
+an interaction will be showcased like it changing its pose, rotating it or bopping it up and down, changing lighting effects etc.
 
 ## Proposal for project:
 
-The initial proposal for this project is still similar however a few changes have been made. The intial plan was still to create an interactable robotic but
-instead to have it so that the robot is lying flat on its back and the interactions you have is by being able to pick apart the robot. Think of this like a
+The initial proposal for this project is still similar however a few changes have been made. The intial plan was still to create an interactable robot but
+instead I have it so that the robot is lying flat on its back and the interactions you have is by being able to pick apart the robot. Think of this like a
 human anatomical body where you can pull apart its organs and inspect them.
+
 
 With all this said, I have scaled down the project and decided to go with an alternative route as described in the description due to time contraints with FYP.
 
-# Instructions for use
+# Instructions on how to play
 
+## Movement
+To move around in the scene, use the following keyboard bindings:
+* 'W' - Foward
+* 'S' - Backward
+* 'A' - Left
+* 'D' - Right
+
+## Interact
+To interact with interactable objects like a button, use the following key binding:
+* 'E' - Interact
+
+## Camera
+For looking around in the scene, simply move the mouse to rotate the camera
 
 # How it works
 
@@ -46,18 +60,6 @@ With all this said, I have scaled down the project and decided to go with an alt
 # What I learned
 
 ## This is how to markdown text:
-
-This is *emphasis*
-
-This is a bulleted list
-
-- Item
-- Item
-
-This is a numbered list
-
-1. Item
-1. Item
 
 This is a [hyperlink](http://bryanduggan.org)
 
