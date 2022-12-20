@@ -10,8 +10,23 @@ public class Button : Interactable
 
     protected override void Interact()
     {
-        Debug.Log("Interacted with " + gameObject.name);
         buttonPressed = !buttonPressed;
         button.GetComponentInParent<Animator>().SetBool("IsPressed", buttonPressed);
+
+        switch(gameObject.tag)
+        {
+            case "Button1":
+                Debug.Log("Interacted with " + gameObject.tag);
+                break;
+            case "Button2":
+                Debug.Log("Interacted with " + gameObject.tag);
+                break;
+            case "Button3":
+                Debug.Log("Interacted with " + gameObject.tag);
+                break;
+        default:
+                Debug.Log("Something went wrong");
+                break;
+        }
     }
 }
