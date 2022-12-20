@@ -35,7 +35,6 @@ public class ButtonManager : Interactable
     {
         button.GetComponentInParent<Animator>().SetBool("IsPressed", buttonPressed);
         yield return new WaitForSeconds(delay);
-        buttonPressed = false;
-        button.GetComponentInParent<Animator>().SetBool("IsPressed", buttonPressed);
+        button.GetComponentInParent<Animator>().SetBool("IsPressed", false);
     }
 }

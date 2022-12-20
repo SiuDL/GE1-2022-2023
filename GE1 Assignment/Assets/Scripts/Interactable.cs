@@ -6,6 +6,7 @@ using UnityEngine;
 // this class adheres to the Template Method Design Pattern
 public abstract class Interactable : MonoBehaviour
 {
+    // stores a prompt to display to the player UI
     public string prompt;
     
     public void BaseInteract()
