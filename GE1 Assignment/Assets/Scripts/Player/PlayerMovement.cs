@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rigidBody;
 
     [Header("Movement Variables")]
-    [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float drag = 5f;
 
     [Header("Grounded Variables")]

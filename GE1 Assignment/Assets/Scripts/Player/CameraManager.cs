@@ -9,9 +9,9 @@ public class CameraManager : MonoBehaviour
     private Transform playerPosition;
 
     [Header("Horizontal Mouse Sensitivity")]
-    [SerializeField] private float sensX = 40f;
+    [SerializeField] private float sensX = 30f;
     [Header("Vertical Mouse Sensitivity")]
-    [SerializeField] private float sensY = 40f;
+    [SerializeField] private float sensY = 30f;
 
     private float mouseX; 
     private float mouseY;

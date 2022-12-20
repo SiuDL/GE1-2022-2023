@@ -25,7 +25,7 @@ public class ButtonManager : Interactable
             case "Button 3":
                 Debug.Log("Interacted with " + gameObject.tag);
                 break;
-        default:
+            default:
                 Debug.Log("Something went wrong");
                 break;
         }
