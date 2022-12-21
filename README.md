@@ -8,7 +8,7 @@ Class Group: TU856
 
 Video:
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+[![YouTube](https://i9.ytimg.com/vi/P_XBOA9CyUw/mq1.jpg)](https://youtu.be/P_XBOA9CyUw)
 
 # Description of the project
 
