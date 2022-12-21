@@ -59,8 +59,8 @@ Finally, the third button will change the light from a starting color of choice 
 | PlayerUI | Modifed From [reference](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) |
 | CameraManager.cs | Self Written |
 | InteractionManager.cs | Modified From [reference](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) |
-| Interactable.cs | Modified From [refernce](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) [reference](https://dotnettutorials.net/lesson/template-method-design-pattern/) |
-| ButtonManager.cs | Modified From | [reference](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) [reference](https://dotnettutorials.net/lesson/template-method-design-pattern/) |
+| Interactable.cs | Modified From [refernce](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) & [reference](https://dotnettutorials.net/lesson/template-method-design-pattern/) |
+| ButtonManager.cs | Modified From [reference](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) & [reference](https://dotnettutorials.net/lesson/template-method-design-pattern/) |
 | RobotSwitcher.cs | Self written |
 | ChangeLight.cs | Self written |
 | FadeLight.cs | Self written |
