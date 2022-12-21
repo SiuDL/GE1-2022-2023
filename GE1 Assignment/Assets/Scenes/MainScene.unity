@@ -12097,8 +12097,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e602530d8d00934095e1e53cc10caea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robot1: {fileID: 1130465045395083294, guid: fde1f141d567f564398e2392abc7d507, type: 3}
-  robot2: {fileID: 6497766201209549910, guid: b5d4839ea7f533141a7b61007396e33f, type: 3}
+  robotPrefab1: {fileID: 1130465045395083294, guid: fde1f141d567f564398e2392abc7d507, type: 3}
+  robotPrefab2: {fileID: 6497766201209549910, guid: b5d4839ea7f533141a7b61007396e33f, type: 3}
 --- !u!43 &998250032
 Mesh:
   m_ObjectHideFlags: 0
