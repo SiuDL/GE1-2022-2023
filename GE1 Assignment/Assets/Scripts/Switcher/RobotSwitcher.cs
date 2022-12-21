@@ -15,7 +15,7 @@ public class RobotSwitcher: MonoBehaviour
     private GameObject robot2;
 
     // boolean to check if robot has been switched
-    private bool switched = false;
+    private bool switched = false; // set to false initially to spawn in the first robot
 
     // method to change the robot
     public void ChangeRobot()
@@ -23,14 +23,16 @@ public class RobotSwitcher: MonoBehaviour
         switch(switched)
         {
             case false:
-                if(robot2)
-                    Destroy(robot2);
+                if(robot2) // checks if the second robot's clone exists
+                    Destroy(robot2); // destroys object
+                // intantiate a clone of the prefab 1 robot
                 robot1 = GameObject.Instantiate<GameObject>(robotPrefab1);
                 switched = true;
                 break;
             case true:
-                if(robot1)
-                    Destroy(robot1);
+                if(robot1) // checks if the first robot's clone exists
+                    Destroy(robot1); // destroys object
+                // intantiate a clone of the prefab 1 robot
                 robot2 = GameObject.Instantiate<GameObject>(robotPrefab2);   
                 switched = false;
                 break;

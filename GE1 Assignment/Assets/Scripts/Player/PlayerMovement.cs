@@ -31,13 +31,9 @@ public class PlayerMovement : MonoBehaviour
         grounded = Physics.Raycast(transform.position, Vector3.down, height * 0.5f + 0.1f, ground);
 
         if(grounded)
-        {
             rigidBody.drag = drag;
-        }
         else
-        {
             rigidBody.drag = 0;
-        }
     }
 
     private void PlayerLocomotion()
