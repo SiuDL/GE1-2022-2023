@@ -59,8 +59,8 @@ Finally, the third button will change the light from a starting color of choice 
 | PlayerUI | Modifed From | [Reference](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) |
 | CameraManager.cs | Self Written |
 | InteractionManager.cs | Modified From | [Reference](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) |
-| Interactable.cs | Modified From | [Refernce 1](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) [Reference 2](https://dotnettutorials.net/lesson/template-method-design-pattern/) |
-| ButtonManager.cs | Modified From | [Reference 1](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) [Reference 2](https://dotnettutorials.net/lesson/template-method-design-pattern/) |
+| Interactable.cs | Modified From | [Refernce](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) [Reference](https://dotnettutorials.net/lesson/template-method-design-pattern/) |
+| ButtonManager.cs | Modified From | [Reference](https://www.youtube.com/watch?v=gPPGnpV1Y1c&list=PL3hhqEqLiX1EUVpxCPaQlJzsvS7568mtS&index=8) [Reference](https://dotnettutorials.net/lesson/template-method-design-pattern/) |
 | RobotSwitcher.cs | Self written |
 | ChangeLight.cs | Self written |
 | FadeLight.cs | Self written |
@@ -68,6 +68,7 @@ Finally, the third button will change the light from a starting color of choice 
 
 # What I am most proud of in the assignment
 
+What I'm most proud of is of two things. Firstly it 
 # What I learned
 
 ## This is how to markdown text:
