@@ -7,12 +7,16 @@ public class ButtonManager : Interactable
     [SerializeField]
     private GameObject button;
     private RobotSwitcher switcher;
+    private FadeLight fader;
+    private ChangeLight changer;
     private bool buttonPressed;
     private float delay = 0.2f;
 
     private void Awake()
     {
         switcher = GameObject.FindGameObjectWithTag("Spawner").GetComponent<RobotSwitcher>();
+        fader = GameObject.FindGameObjectWithTag("Spotlight").GetComponentInParent<FadeLight>();
+        changer = GameObject.FindGameObjectWithTag("Spotlight").GetComponentInParent<ChangeLight>();
     }
 
     protected override void Interact()
@@ -28,9 +32,11 @@ public class ButtonManager : Interactable
                 break;
             case "Button 2":
                 Debug.Log("Interacted with " + gameObject.tag);
+                fader.DimLight();
                 break;
             case "Button 3":
                 Debug.Log("Interacted with " + gameObject.tag);
+                changer.AlterLight();
                 break;
             default:
                 Debug.Log("Something went wrong - ButtonManager");
