@@ -6,8 +6,14 @@ public class ButtonManager : Interactable
 {
     [SerializeField]
     private GameObject button;
+    private RobotSwitcher switcher;
     private bool buttonPressed;
     private float delay = 0.2f;
+
+    private void Awake()
+    {
+        switcher = GameObject.FindGameObjectWithTag("Spawner").GetComponent<RobotSwitcher>();
+    }
 
     protected override void Interact()
     {
@@ -18,6 +24,7 @@ public class ButtonManager : Interactable
         {
             case "Button 1":
                 Debug.Log("Interacted with " + gameObject.tag);
+                switcher.ChangeRobot();
                 break;
             case "Button 2":
                 Debug.Log("Interacted with " + gameObject.tag);
@@ -26,7 +33,7 @@ public class ButtonManager : Interactable
                 Debug.Log("Interacted with " + gameObject.tag);
                 break;
             default:
-                Debug.Log("Something went wrong");
+                Debug.Log("Something went wrong - ButtonManager");
                 break;
         }
     }

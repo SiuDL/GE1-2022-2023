@@ -12,7 +12,7 @@ Video:
 
 # Description of the project
 
-This is project is to create an interactable robotic body floating on a display, the idea of a robot is inspired by Terminator.
+This is project is to create an interactable robotic body floating on a display, the idea of a robot or mech rather is inspired by Gundam.
 The action performed in order to interact with this robot is through a set of buttons in front of this display. Once a button is pushed,
 an interaction will be showcased like it changing its pose, rotating it or bopping it up and down, changing lighting effects etc.
 
