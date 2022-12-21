@@ -68,26 +68,22 @@ Finally, the third button will change the light from a starting color of choice 
 
 # What I am most proud of in the assignment
 
-What I'm most proud of is of two things. Firstly it 
+What I'm most proud of is the time and effort it took to model the robot for this assignment.
+I spent the better part of nearly an entire day trying to get it right and I am quite pleased
+with the results.
+
+![robot](images/image1.png)
+![torso](images/image2.png)
+![legs](images/image3.png)
+
 # What I learned
 
-## This is how to markdown text:
+What I learned and found really useful is the use of raycasts. Upon using them I learned that there is a lot of uses for it in terms game development.
+Like checking the type of surface the player is walking on or what they are looking at. 
 
-This is a [hyperlink](http://bryanduggan.org)
+On top of this, I learnt that there is through the use of an abstract class
+and applying the template method design pattern. This is very handy to use for implementing interactable objects in games.
 
-This is code:
+Another thing I learned is how animations work in Unity, for the button interaction I decided not to go with simply having a static button that doesn't move but instead create animations for it instead. After much trial and error, I've finally completed a working button. 
 
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-This is an image using a relative URL:
-
-![An image](images/p8.png)
+However, the intial version of this button was kinda funky. I wanted the button, when pressed it will pop back up again, but instead the initial version only pops back up again if you press again of which isn't really nice to operate. The solution to this was something I've previously learned but kinda forgotten, of which is coroutines. By applying a coroutine, I had it so that there was delay after the press animation started and once the delay has ended, it then triggered the release animation.
